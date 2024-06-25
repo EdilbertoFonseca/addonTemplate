@@ -5,8 +5,7 @@
 	"recommendations": [
 		"ms-python.python",
 		"ms-python.vscode-pylance",
-		"redhat.vscode-yaml",
-		"ms-python.flake8"
+		"redhat.vscode-yaml"
 	],
 	// List of extensions recommended by VS Code that should not be recommended for users of this workspace.
 	"unwantedRecommendations": []

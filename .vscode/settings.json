@@ -1,20 +1,25 @@
 {
     "editor.accessibilitySupport": "on",
-    "flake8.args": [
+    "python.linting.enabled": true,
+    "python.linting.maxNumberOfProblems": 10000,
+    "python.linting.flake8Args": [
         "--config=flake8.ini"
     ],
-    "flake8.importStrategy": "fromEnvironment",
+    "python.linting.flake8Enabled": true,
+    "python.linting.pylintEnabled": false,
     "python.autoComplete.extraPaths": [
         "../nvda/source",
         "../nvda/miscDeps/python"
-    ],
+        ],
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "editor.insertSpaces": false,
-    "python.analysis.stubPath": "${workspaceFolder}/.vscode/typings",
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportUndefinedVariable": "none"
+    },
     "python.analysis.extraPaths": [
         "../nvda/source",
         "../nvda/miscDeps/python"
     ],
-    "python.defaultInterpreterPath": "${workspaceFolder}/../nvda/.venv/scripts/python.exe"
+    "python.defaultInterpreterPath": "../nvda/.venv/scripts/python.exe"
 }
